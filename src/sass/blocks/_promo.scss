@@ -1,0 +1,150 @@
+.promo {
+    min-height: 680px;
+    background: url(../../images/header.jpg) center (center/cover) no-repeat ;
+    .header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        &__logo {
+            padding-top: 15px;
+            img {
+                width: 100%;
+            }
+        }
+            
+        &__menu {
+            height: 23px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 55px;
+            list-style-type: none;
+            li {
+                width: auto;
+            }
+            &_item {
+                padding: 0 10px 0 10px;
+                text-align: left;
+                border-right: 1px dotted grey;
+                &:last-child {
+                    border-right: none;
+                }
+                :hover {
+                    color: $main-color;
+                }
+            }
+            &_link {
+                font-size: 15px;
+                font-weight: 300;
+                text-align: left;
+                color: #ffffff;
+            }
+        }
+        &__contacts {
+            display: block;
+            &_text {
+                color: $text-color;
+                margin: 25px 5px 3px 22px;
+                font-size: 14px;
+                line-height: 1.71;
+                text-align: right;
+            }
+            &_phone{
+                color: $text-color;
+                margin: 5px 6px 47px 50px;
+                font-size: 19px;
+                font-weight: bold;
+                line-height: 1.26;
+                text-align: right;
+                text-decoration: none;
+            }
+        }
+        &__btn {
+            width: 160px;
+            height: 45px;
+            margin: 30px 0 0 18px;
+            background-color: $main-color;
+            border: none;
+            color: $text-color;
+            text-transform: uppercase;
+            font-size: 12px;
+            text-align: center;
+            border-radius: 22px;
+        }
+        
+    }
+    &__logistic {
+        font-size: 22px;
+        text-align: center;
+        color: $text-color;
+        font-weight: lighter;
+        padding-top: 10px;
+    }
+    &__title {
+        height: 80px;
+        font-size: 72px;
+        font-weight: bold;
+        text-align: center;
+        color: $main-color;
+    }
+    &__subtitle {
+        height: 45px;
+        font-size: 42px;
+        font-weight: normal;
+        color: $text-color;
+        text-align: center;
+        margin-bottom: 38px;
+    }
+
+    &__divider {
+        width: 809px;
+        height: 1px;
+        background-color: $text-color;
+        margin: 0 auto;
+        
+        
+    }
+
+    &__services {
+        margin-top: 28px;
+        padding-bottom: 49px;
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: minmax(150px, auto);
+        justify-content: center;
+        column-gap: 38px;
+        &_item {
+            display: grid;
+            grid-template-rows: 63px auto;
+            row-gap: 19px;
+            &-icon{
+                display: block;
+                margin: 0 auto;
+            }
+            &-descr {
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 1.38;
+                text-align: center;
+                color: $text-color;
+            }
+        }
+
+    }
+    &__btn_big {
+        display: block;
+        width: 230px;
+        height: 57px;
+        margin: 0 auto;
+        background-color: $main-color;
+        border: none;
+        color: $text-color;
+        text-transform: uppercase;
+        font-size: 12px;
+        text-align: center;
+        border-radius: 30px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
