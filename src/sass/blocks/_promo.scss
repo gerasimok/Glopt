@@ -106,7 +106,7 @@
         
     }
 
-    &__services {
+    .services {
         margin-top: 28px;
         padding-bottom: 49px;
         display: grid;
@@ -114,15 +114,15 @@
         grid-template-rows: minmax(150px, auto);
         justify-content: center;
         column-gap: 38px;
-        &_item {
+        &__item {
             display: grid;
             grid-template-rows: 63px auto;
             row-gap: 19px;
-            &-icon{
+            &_icon{
                 display: block;
                 margin: 0 auto;
             }
-            &-descr {
+            &_descr {
                 font-size: 16px;
                 font-weight: 300;
                 line-height: 1.38;
