@@ -1,6 +1,7 @@
 .diagram {
     min-height: 454px;
-    background-color: #f3f3f3;
+    background-color: #f3f3f3;padding-bottom: 36px;
+
     &__title {
         padding-top: 51px;
         font-size: 26px;
@@ -8,8 +9,37 @@
         text-align: center;
         color: #2e2e2e;
         text-transform: uppercase;
+        margin-bottom: 33px;
     }
-    &__wrapper {
-        padding-top: 33px;
+
+    .row {
+        justify-content: center;
+    }
+   
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    &__icon {
+        display: flex;
+        height: 65px;
+		justify-content: center;
+		align-items: center;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        font-weight: bold;
+        color: $main-color;
+        padding-top: 12px;
+    }
+
+    &__descr {
+        font-size: 14px;
+        font-weight: 300;
+        text-align: center;
+        color: #3a3a3a;
     }
 }
