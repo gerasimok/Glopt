@@ -1,0 +1,174 @@
+.price {
+   min-width: 952px; 
+   padding-bottom: 80px;
+   &__title {
+        padding-top: 53px;
+        font-size: 26px;
+        font-weight: bold;
+        text-align: center;
+        color: #2e2e2e;
+        text-transform: uppercase;
+   }
+   &__divider {
+        width: 148px;
+        height: 1px;
+        background-color: $main-color;
+        margin: 0 auto;
+        margin-top: 10px;
+   }
+   &__subtitle {
+        padding-top: 17px;
+        font-size: 21px;
+        font-weight: 300;
+        text-align: center;
+        color: #2e2e2e;
+   }
+    &__wrapper {
+        padding-top: 34px;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(265px, auto));
+        grid-template-rows: 61px 140px minmax(84px, auto) 70px;
+        grid-auto-rows: 355px;
+        column-gap: 28px;
+        
+    }
+    &__item {
+        display: grid;
+        height: 355px;
+        width: 265px;
+        box-shadow: 0px 0px 0px 2px#e9e9e9;
+
+    }
+    &__itemTitle {
+        grid-row: 1;
+        width: 265px;
+        height: 61px;
+        background-color: #25333c;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        color: #ffffff;
+        text-transform: uppercase;
+        padding: 20px 50px;
+
+    }
+    &__info {
+        font-size: 14px;
+        font-weight: normal;
+        text-align: center;
+        color: #2e2e2e;
+        grid-row: 2;
+        padding: 14px 40px 19px 40px;
+
+    }
+    &__icon {
+        display: block;
+        margin: 0 auto;
+    }
+    &__delivery {
+        text-align: center;
+    }
+    &__pricePerKg {
+    font-size: 28px;
+    line-height: 1.07;
+    color: $main-color;
+    text-align: center;
+
+    }
+   
+    &__descr {
+        grid-row: 3;
+        font-size: 14px;
+        font-weight: 300;
+        text-align: center;
+        color: #2e2e2e;
+        margin: 10px 35px;
+    }
+    &__btn {
+        grid-row: 4;
+        width: 160px;
+        height: 45px;
+        margin: 0 auto;
+        background-color: $main-color;
+        border: none;
+        color: $text-color;
+        text-transform: uppercase;
+        font-size: 12px;
+        text-align: center;
+        border-radius: 22px;
+        margin: 13px 55px;
+        cursor: pointer;
+    }
+
+    .consultation__request{
+        padding-top: 56px;
+        &-title {
+            font-size: 28px;
+            text-align: center;
+            color: #3a3a3a;
+        }
+        &-icon {
+            display: block;
+            position: relative;
+            margin: 0 auto;
+            width: 50px;
+            height: 70px;
+            z-index: 1;
+            padding-top: 40px;
+            @include before_circle;
+            &:before {
+                border-color: $main-color;
+                top: 30%;
+                left: -46%;
+                background-color: #ffffff;
+                z-index: -1;
+            }
+            
+        }
+
+        &-form {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            width: 1140px;
+            height: 166px;
+            padding-left: 162px;
+            padding-right: 162px;
+            padding-bottom: 50px;
+            box-shadow: 0px 0px 0px 2px#e9e9e9;
+            input {
+                border: none;
+                margin: 12px 0 0 28px;
+                font-size: 13px;
+                font-weight: 300;
+                text-align: left;
+            }
+            
+        }
+        
+        &-input {
+            width: 268px;
+            height: 45px;
+            border: solid 1px rgba(0, 0, 0, 0.21);
+            border-radius: 30px;
+        }
+        &-btn {
+            position: absolute;
+            display: block;
+            width: 180px;
+            height: 45px;
+            background-color: $main-color;
+            border: none;
+            color: $text-color;
+            text-transform: uppercase;
+            text-align: center;
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: bold;
+            cursor: pointer;
+            left: 50%;
+            transform: translate(-50%, 0);
+            top: 360%; //решить проблему
+        }
+    }
+}

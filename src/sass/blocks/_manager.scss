@@ -1,0 +1,32 @@
+.manager {
+    min-height: 342px;
+    background: url(../../images/town.jpg) center (center/cover) no-repeat;
+    &__icon {
+        display: block;
+        position: relative;
+        @include before_circle;
+        padding-top: 80px;
+        margin: 0 auto;
+        width: 50px;
+    }
+
+    &__title {
+        padding-top: 50px;
+        font-size: 26px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.88;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+    }
+    &__descr {
+        padding-top: 22px;
+        padding-bottom: 75px;
+        font-size: 19px;
+        font-weight: 300;
+        text-align: center;
+        color: #ffffff;
+    }
+}

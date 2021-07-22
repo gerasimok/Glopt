@@ -1,0 +1,15 @@
+.diagram {
+    min-height: 454px;
+    background-color: #f3f3f3;
+    &__title {
+        padding-top: 51px;
+        font-size: 26px;
+        font-weight: bold;
+        text-align: center;
+        color: #2e2e2e;
+        text-transform: uppercase;
+    }
+    &__wrapper {
+        padding-top: 33px;
+    }
+}
