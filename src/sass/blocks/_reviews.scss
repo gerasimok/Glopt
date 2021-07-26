@@ -1,0 +1,25 @@
+.reviews {
+    min-height: 470px;
+    &__title {
+        font-size: 26px;
+        font-weight: bold;
+        text-align: center;
+        color: #2e2e2e;
+        text-transform: uppercase;
+        padding-top: 51px;
+    }
+    &__divider {
+        width: 148px;
+        height: 1px;
+        background-color: $main-color;
+        margin: 0 auto;
+        margin-top: 25px;
+        margin-bottom: 17px;
+    }
+    &__subtitle {
+        font-size: 21px;
+        font-weight: 300;
+        text-align: center;
+        color: #2e2e2e;
+    }
+}
