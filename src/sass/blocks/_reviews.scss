@@ -36,23 +36,5 @@
         box-sizing: border-box;
     }
     
-    .slick-slide,
-    .slick-active + .slick-active ~ .slick-active {
-        display: block;
-        padding: 150px 15px;
-        background: #222;
-        color: #fff;
-        border-radius: 10px;
-        
-        transform: scale(.9);
-        opacity: 0.7;
-        
-        transition: .5s ease ;
-}
-
-    .slick-active + .slick-active{
-    transform: scale(1);
-    opacity: 1;
-    }
     
 }
