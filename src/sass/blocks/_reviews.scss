@@ -1,5 +1,6 @@
 .reviews {
     min-height: 470px;
+    background-color: burlywood;
     &__title {
         font-size: 26px;
         font-weight: bold;
@@ -22,4 +23,36 @@
         text-align: center;
         color: #2e2e2e;
     }
+
+    .carousel {
+        padding-top: 31px;
+        width: 900px;
+        margin: 0 auto; 
+    }
+    &__item {
+        box-sizing: border-box;
+    }
+    &__text {
+        box-sizing: border-box;
+    }
+    
+    .slick-slide,
+    .slick-active + .slick-active ~ .slick-active {
+        display: block;
+        padding: 150px 15px;
+        background: #222;
+        color: #fff;
+        border-radius: 10px;
+        
+        transform: scale(.9);
+        opacity: 0.7;
+        
+        transition: .5s ease ;
+}
+
+    .slick-active + .slick-active{
+    transform: scale(1);
+    opacity: 1;
+    }
+    
 }
