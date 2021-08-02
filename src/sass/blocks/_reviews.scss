@@ -1,6 +1,7 @@
 .reviews {
+    position: relative;
     min-height: 470px;
-    background-color: burlywood;
+    background-color: #ffffff;
     &__title {
         font-size: 26px;
         font-weight: bold;
@@ -26,15 +27,47 @@
 
     .carousel {
         padding-top: 31px;
-        width: 900px;
-        margin: 0 auto; 
+        position: relative;
     }
+    
     &__item {
-        box-sizing: border-box;
+        position: relative;
+    }
+    &__img {
+        margin: 0 auto;
+        left: 50%;
+        transform: translate(-56%);
+    }
+    &__name {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
     }
     &__text {
-        box-sizing: border-box;
+        font-size: 14px;
+        font-weight: 300;
+        color: #3a3a3a;
+        line-height: 1.57;
+        text-align: center;
     }
     
     
+}
+
+.slick-prev, .slick-next {
+    position: absolute;
+    top: 55px;
+
+    img {
+        width: 15px;
+        height: 47px;
+    }
+}
+.slick-prev {
+    left: 39%;
+    z-index: 1;
+}
+.slick-next {
+    left: 58%;
+    z-index: 1;
 }
