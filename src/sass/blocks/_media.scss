@@ -1,0 +1,69 @@
+@media (max-width: 1200px) {
+	.promo {
+	  	.header{
+			&__logo {
+				img {
+					width: 90%;
+				}
+			}
+			&__menu {
+				&_item {
+					padding: 0 5px 0 5px;
+				}
+				&_link {
+					font-size: 12px;
+				}
+			}
+			&__contacts {
+				&_text{
+					font-size: 11px;
+				}
+				&_phone {
+					font-size: 15px;
+				}
+			}
+			&__btn {
+				width: 150px;
+   				height: 40px
+			}
+	  	}
+		&__title {
+			font-size: 60px;
+		}
+		&__subtitle {
+			font-size: 35px;
+		}
+		.services {
+			&__item {
+				&_descr {
+					font-size: 15px;
+				}
+			}
+	
+		}
+	}
+	.work {
+		&__wrapper {
+			grid-template-columns: repeat(3,minmax(290px,auto));
+		}
+		&__subdescr {
+			font-size: 14px;
+		}
+	}
+	.price {
+		&__wrapper {
+			justify-content: center;
+		}
+		.consultation__request {
+			&-form {
+				column-gap: 9px;
+				width: 920px;
+			}
+			&-input {
+				input {
+					margin: 12px 0 0 14px;
+				}
+			}
+		}
+	}
+}
