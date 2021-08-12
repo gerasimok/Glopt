@@ -74,6 +74,9 @@
             cursor: pointer;
 
         }
+        &__hamburger {
+            display: none;
+        }
         
     }
     &__logistic {
@@ -150,4 +153,5 @@
         cursor: pointer;
         outline: 0;
     }
+    
 }
