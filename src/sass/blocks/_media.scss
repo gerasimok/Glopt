@@ -67,3 +67,150 @@
 		}
 	}
 }
+@media (max-width: 991px) {
+	.promo {
+		padding-bottom: 24px;
+		.header{
+			justify-content: space-evenly;
+			&__menu {
+				flex-direction: column;
+				position: fixed;
+				justify-content: center;
+				align-items: center;
+				top: 0;
+				left: -100%;
+				width: 30%;
+				height: 100vh;
+				padding: 20px 15px;
+				background-color: rgb(0, 0, 0, .8);
+				transition: 0.6s all;
+				&_active {
+					left: 0;
+				}
+				&_item {
+					margin-top: 25px;
+					padding-right: 0;
+					border: none;
+				}
+				&_link {
+					font-size: 20px;
+				}
+			}
+			&__hamburger {
+				display: block;
+				position: absolute;
+				right: 35px;
+				top: 45px;
+				width: 30px;
+				height: 12px;
+				span {
+					display: block;
+					height: 2px;
+					width: 100%;
+					background-color: #fff;
+					margin-bottom: 2px;
+					transition: 0.5s all;
+				}
+				&_active {
+					span {
+						margin-bottom: -2px;
+						&:nth-child(1) {
+							transform: translateY(3px) rotate(-45deg);
+						}
+						&:nth-child(2) {
+							transform: translateY(3px) rotate(45deg);
+						}
+						&:nth-child(3) {
+							display: none;
+						}
+					}
+				}
+			}
+			&__contacts {
+				&_phone {
+					margin: 0 auto;
+				}
+			}
+			
+		}
+		&__title {
+			font-size: 45px;
+		}
+		&__subtitle {
+			font-size: 25px;
+		}
+		.services {
+			grid-template-columns: repeat(2,270px);
+			column-gap: 100px;
+			row-gap: 18px;
+		}
+		
+	}
+
+	.advantages {
+		&__item {
+			grid-template-columns: 70px 258px;
+			row-gap: 0;
+		}
+		&__subtitle {
+			font-size: 13px;
+		}
+		&__descr {
+			font-size: 13px;
+		}
+	}
+	.work {
+		&__wrapper {
+			grid-template-columns: repeat(3,minmax(210px,auto));
+		}
+		&__descr {
+			font-size: 16px;
+		}
+		&__subdescr {
+			font-size: 14px;
+		}
+	}
+	.price {
+		&__wrapper {
+			grid-template-columns: repeat(2,minmax(265px,auto));
+			grid-template-rows: 390px 154px minmax(84px,auto) 70px;
+		}
+		.consultation {
+			&__request{
+				&-form {
+					width: 695px;
+					padding-right: 20px;
+					padding-left: 20px;
+				}
+				&-input {
+					width: 200px;
+				}
+			}
+		}
+	}
+	.reviews {
+		&__img {
+			transform: translate(-58%);
+		}
+		.slick-next, .slick-prev {
+			top: 76px;
+		}
+		.slick-next {
+			left: 59%;
+		}
+		.slick-prev {
+			left: 39%;
+		}
+	}
+	.questions {
+		&__wrapper {
+			grid-template-columns: minmax(690px,auto);
+		}
+	}
+	.footer {
+		&__descr {	
+			font-size: 15px;
+		}
+	}
+	
+}
